@@ -25,8 +25,40 @@
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
-      border-bottom:{
-  border: 5px solid #C0C0C0; /* Silver */
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Border Bottom</title>
+  <style>
+    h1.sparkly-line {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    h1.sparkly-line::after {
+      content: "✨ ★ ✨ ★ ✨ ★ ✨";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      font-size: 18px;
+      color: #ffb6c1; /* Baby pink */
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="sparkly-line">Magical Heading</h1>
+
+</body>
+</html>
+
 }
 
 }
