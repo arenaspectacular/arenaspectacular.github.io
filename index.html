@@ -3,62 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Support Our Work</title>
+  <title>Donate</title>
   <style>
-    body {
-      background-color: #ffffff;
-      font-family: 'Georgia', serif;
-      color: #000;
+    body, html {
       margin: 0;
-      padding: 2em;
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.6;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: black;
+      color: white;
     }
 
-    h1 {
+    /* HEADER */
+    header {
+      background-color: #d4ff35;
+      padding: 20px 0;
       text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
     }
 
-    p {
-      font-size: 1.2em;
-      margin-bottom: 1.2em;
+    nav a {
+      margin: 0 15px;
+      text-transform: uppercase;
+      font-size: 14px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
     }
 
-    .donate-link {
-      display: block;
-      text-align: center;
-      margin-top: 2em;
-      font-weight: bold;
-      font-size: 1.3em;
-      color: #0000EE;
+    nav a:hover {
       text-decoration: underline;
     }
 
-    .italic {
-      font-style: italic;
+    .logo {
+      margin-bottom: 10px;
     }
 
-    .bold {
+    /* MAIN CONTENT */
+    .hero {
+      background: url('https://placehold.co/1200x800/000000/ffffff.png?text=Replace+with+your+image') no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    .donate-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .donate-buttons a {
+      background-color: black;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 40px;
+      text-decoration: none;
       font-weight: bold;
+      font-size: 18px;
+    }
+
+    .cat-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      width: 150px;
+      z-index: 1;
+    }
+
+    /* FOOTER */
+    footer {
+      background: url('https://placehold.co/1200x200/800000/ffffff.png?text=Red+Curtain') no-repeat center;
+      background-size: cover;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: pink;
+      text-decoration: none;
+      margin: 0 10px;
+      text-transform: uppercase;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Support Our Work</h1>
 
-  <p>We make art for our communities, our bodies, and our stories.</p>
+  <header>
+    <div class="logo">
+      <!-- Replace with your own logo or banner -->
+      <img src="https://placehold.co/200x40/ff00ff/000000.png?text=LOGO" alt="Logo" />
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">2025 Festival</a>
+      <a href="#">Submit</a>
+      <a href="#">Archive</a>
+      <a href="#"><u>Donate</u></a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <p>If you’ve been moved, inspired, or affirmed by what we do, consider donating. Every little bit helps.</p>
+  <section class="hero">
+    <img src="https://placehold.co/150x150/000000/ffffff.png?text=Cat" alt="Cat" class="cat-image" />
+    <div class="donate-buttons">
+      <a href="#">CashApp</a>
+      <a href="#">PayPal</a>
+      <a href="#">Venmo</a>
+    </div>
+  </section>
 
-  <p class="italic">We are entirely grassroots — no corporate sponsorships, no government grants, just us and you.</p>
+  <footer>
+    <div>
+      <a href="#">Merch</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">Fetlife</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Press</a>
+    </div>
+    <p>Copyright Your Site 2024. Site design by [Your Name].</p>
+  </footer>
 
-  <p class="bold">Thank you for supporting independent art and radical joy.</p>
-
-  <a class="donate-link" href="https://venmo.com/YOUR-USERNAME" target="_blank">
-    Donate via Venmo
-  </a>
 </body>
 </html>
