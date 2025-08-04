@@ -2,91 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Donate</title>
+  <title>Welcome to Wienercowgirlville</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: black;
-      color: white;
-    }
-
-    /* HEADER */
-    header {
-      background-color: #d4ff35;
-      padding: 20px 0;
+      background: url('https://i.imgur.com/nJxVWxx.jpg'); /* Cloud bg */
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #440088;
       text-align: center;
     }
 
-    nav a {
-      margin: 0 15px;
+    header {
+      background: linear-gradient(to right, #FFDE59, #FF90B3);
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
       text-transform: uppercase;
-      font-size: 14px;
+      letter-spacing: 2px;
+      border-bottom: 5px dotted red;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #000;
       text-decoration: none;
-      color: black;
-      font-weight: 500;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    .logo {GRACE BARR} 
-      margin-bottom: 10px;
-    }
-
-    /* MAIN CONTENT */
     .hero {
-      background: url('https://placehold.co/1200x800/000000/ffffff.png?text=Replace+with+your+image') no-repeat center center;
-      background-size: cover;
-      text-align: center;
-      padding: 80px 20px;
-      position: relative;
+      margin-top: 40px;
     }
 
-    .donate-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 20px;
+    .hero img {
+      width: 100px;
+      height: auto;
     }
 
-    .donate-buttons a {
-      background-color: black;
-      color: white;
-      padding: 15px 30px;
-      border-radius: 40px;
-      text-decoration: none;
+    .title {
+      font-size: 36px;
+      color: #800080;
+      text-shadow: 2px 2px #FFB6C1;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hearts {
+      font-size: 24px;
+      color: red;
+      margin: 10px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 3px dashed hotpink;
+      margin-top: 30px;
+    }
+
+    .highlight {
+      color: hotpink;
       font-weight: bold;
-      font-size: 18px;
     }
 
-    .cat-image {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -30%);
-      width: 150px;
-      z-index: 1;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
     }
 
-    /* FOOTER */
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border: 5px double #FFD700;
+      border-radius: 10px;
+    }
+
     footer {
-      background: url('https://placehold.co/1200x200/800000/ffffff.png?text=Red+Curtain') no-repeat center;
-      background-size: cover;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
+      margin-top: 50px;
+      background: url('https://i.imgur.com/ME91bDr.png');
+      padding: 30px;
+      font-size: 12px;
+      color: white;
     }
 
     footer a {
       color: pink;
       text-decoration: none;
       margin: 0 10px;
-      text-transform: uppercase;
     }
 
     footer a:hover {
@@ -97,39 +111,53 @@
 <body>
 
   <header>
-    <div class="logo">
-      <!-- Replace with your own logo or banner -->
-      <img src="https://placehold.co/200x40/ff00ff/000000.png?text=LOGO" alt="Logo" />
-    </div>
+    <div>✨ Welcome to Wienercowgirlville ✨</div>
     <nav>
+      <a href="#">Home</a>
       <a href="#">About</a>
-      <a href="#">2025 Festival</a>
-      <a href="#">Submit</a>
-      <a href="#">Archive</a>
-      <a href="#"><u>Donate</u></a>
+      <a href="#">Tour</a>
+      <a href="#">Music</a>
+      <a href="#">Donate</a>
       <a href="#">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <img src="https://placehold.co/150x150/000000/ffffff.png?text=Cat" alt="Cat" class="cat-image" />
-    <div class="donate-buttons">
-      <a href="#">CashApp</a>
-      <a href="#">PayPal</a>
-      <a href="#">Venmo</a>
-    </div>
-  </section>
+  <div class="hero">
+    <img src="https://i.imgur.com/gAmjvDP.gif" alt="Dachshund Left" />
+    <div class="title">Where dachshunds ride into the sunset 🌄</div>
+    <img src="https://i.imgur.com/gAmjvDP.gif" alt="Dachshund Right" />
+    <div class="hearts">🐾 ❤️ 🐾</div>
+    <div class="subtitle">Boots, banjos, barkin’ babes — all in one place.</div>
+  </div>
+
+  <div class="content">
+    <p>
+      You've just entered the sparkly gates of <span class="highlight">Wienercowgirlville</span>, where 
+      <em>dusty roads and floppy ears</em> are all part of the plan.
+    </p>
+    <p>
+      Current population: <span class="highlight">3 rowdy pups</span>, 1 banjo, 2 cowboy hats, and a whole lotta glitter.
+    </p>
+    <p><strong>Please reload for the latest vibes. Last updated: August 4, 2025.</strong></p>
+  </div>
+
+  <div class="gallery">
+    <img src="https://i.imgur.com/E8RnsM5.jpeg" alt="Cowgirl Band" />
+    <img src="https://i.imgur.com/Juh1AzC.jpeg" alt="Stage Shot" />
+    <img src="https://i.imgur.com/qPPKH8Y.jpeg" alt="Crowd Surfing" />
+    <img src="https://i.imgur.com/kU2n7zM.jpeg" alt="Dog Rodeo" />
+    <img src="https://i.imgur.com/UvKspm7.jpeg" alt="Western Vibes" />
+  </div>
 
   <footer>
     <div>
-      <a href="#">Merch</a> |
+      <a href="#">MySpace</a> |
+      <a href="#">Neopets</a> |
+      <a href="#">Tumblr</a> |
       <a href="#">Instagram</a> |
-      <a href="#">Facebook</a> |
-      <a href="#">Fetlife</a> |
-      <a href="#">Twitter</a> |
-      <a href="#">Press</a>
+      <a href="#">Zanga</a>
     </div>
-    <p>Copyright Your Site 2024. Site design by [Your Name].</p>
+    <p>Copyright 2025 Wienercowgirlville. Web design by Grace + ChatGPT. 🤠🐶</p>
   </footer>
 
 </body>
